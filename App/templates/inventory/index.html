@@ -1,0 +1,12 @@
+{% extends "base/index.html" %}
+
+{% load static %}
+
+{% block title %}Infinite Scroll with Django+htmx{% endblock title %}
+
+{% block content %}
+
+<div>
+    {% include "inventory/list.html" with products=products %}
+</div>
+{% endblock content %}
